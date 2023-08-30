@@ -13,7 +13,7 @@
 
 <center><H1>Introdução a Inteligência Artificial</H1></center>
 
-**Definições**
+**Definição**
 
 
 <table>
