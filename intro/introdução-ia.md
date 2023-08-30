@@ -142,6 +142,8 @@ A IA é um campo que foi desenvolvido por pesquisadores de diversas áreas difer
 <center><img src="../imgs/agente-reativo.png" alt="drawing" width="450"/></center>
 <center>Agente Reativo Simples</center>
 
+---
+
 **Elementos funcionais de um agente**
 
 - Percepção: fazer referência às entradas perceptivas do agente em
@@ -157,6 +159,8 @@ ação.
 
 - Programa do Agente: é uma implementação concreta da função de agente,
 relacionada à arquitetura do agente.
+
+---
 
 **Mapeando percepções em ações**
 
@@ -179,6 +183,7 @@ Chamamos de **função do agente** o mapeamento de uma sequência de percepçõe
 | [A, limpo], [A, sujo] | Aspirar |
 | ... | ... |
 
+---
 
 **Comportamento dos Agentes**
 
@@ -189,6 +194,8 @@ Chamamos de **função do agente** o mapeamento de uma sequência de percepçõe
 
 - **Regra geral para medida de desempenh**: É melhor projetar as medidas de desempenho de acordo com o resultado esperado (desejado).
 
+---
+
 **Tipos de Agentes**
 
 | Tipo de Agente | Descrição |
@@ -196,25 +203,35 @@ Chamamos de **função do agente** o mapeamento de uma sequência de percepçõe
 | Reativo Simples | Age com base em estímulos imediatos, tomando decisões sem considerar o histórico ou futuro. |
 | Baseado em Modelo | Considera um estado interno do ambiente para tomar decisões com base em previsões futuras, além das percepções atuais. Com esse estado interno, consegue interpretar como o ambiente evolui.|
 | Baseado em Objetivos | Possui objetivos específicos e toma ações que o levem mais perto da solução desses objetivos. |
-| Baseado em Utilidade | Avalia as ações com base em uma função de utilidade, buscando maximizar um valor numérico associado às ações. |
+| Baseado em Utilidade | Avalia as ações com base em uma função de utilidade, buscando maximizar um valor numérico associado às ações.|
 | Baseado em Aprendizado | Aprende com a experiência e ajusta suas ações ao longo do tempo, otimizando seu desempenho por meio do aprendizado. |
 
-&nbsp; 
+---
+
+**Agentes baseados em modelos**: Esses agentes usam um **modelo interno do ambiente** que percebem para tomar suas decisões com base em previsões futuras. Vamos imaginar um agente que realiza controle de tráfego urbano. Esse agente vai utilizar dados históricos do tráfego, informações em tempo real a partir de seus sensores e outros dados para construir esse modelo interno. Com base nesse modelo, ele pode fazer previsões para tomar decisões. Para esse tipo de agente vamos ter uma etapa extra de modelagem do ambiente usando os dados que temos disponíveis.
 
 <center><img src="../imgs/agente-modelos.png" alt="drawing" width="450"/></center>
 <center>Agente Baseado em Modelos</center>
 
-&nbsp; 
+---
+
+**Agentes baseados em objetivos**: São os agentes que tomam decisões que os aproximam de alcançar alguma meta definida. Podemos usar o mesmo exemplo do aspirador para imaginar um agente baseado em objetivo. Nesse cenário, o objetivo do agente é limpar o máximo de espaços possíveis. Para esse tipo de agente, vamos ter dois processos importantes: 1) Verificação do objetivo, onde o aspirador verifica através de sensores se a sujeira foi removida; 2) Iteração, onde o aspirador repete o processo de limpeza até que o objetivo seja concluído.
 
 <center><img src="../imgs/agente-objetivo.png" alt="drawing" width="450"/></center>
 <center>Agente Baseado em Objetivos</center>
 
-&nbsp; 
+---
+
+**Agentes baseados em utilidade**: É o tipo de agente que toma decisções baseado no resultados de uma função chamada de "utilidade". Essa função atribui valores numéricos a diferentes resultados de possíveis ações. O agente precisa escolher as ações que vão **maximizar** o valor dessa função. Podemos usar como exemplo os **sistemas de recomendação**. Um sistema de recomendação de filmes pode ser um agente  que tem como propósito maximizar a satisfação do usuário quando sugere filmes. Essa função pode ser modelada baseada nas preferências do usuário e em informações sobre os filmes, como, gênero, duração, elenco e outros. A função pode, por exemplo, atribuir uma nota de 0 a 10 para cada filme, representando o quanto um usuário específico pode gostar de um filme. Quando o usuário interage com a plataforma, ele fornece informações sobre as suas preferências. Usando os dados dos usuários e dos filmes, a função de utilidade pode ser criada para atribuir uma pontuação que indica a possibilidade do usuário gostar do filme visando maximizar sua satisfação. Portanto, temos dois elementos importantes nessa função: **Modelagem da função** e **Objetivo (Satisfação do cliente)**. 
 
 <center><img src="../imgs/agente-utilidade.png" alt="drawing" width="450"/></center>
 <center>Agente Baseado em Utilidade</center>
 
-&nbsp; 
+---
+
+**Agentes baseados em aprendizado**: Utilizam a experiência para melhorar seu desempenho ao longo do tempo. Vou dar um exemplo prático de um agente baseado em aprendizado: um sistema de recomendação de músicas. Imagine um sistema de recomendação de músicas, como o que é usado em plataformas de streaming de música. Esse sistema é um agente baseado em aprendizado, pois utiliza dados sobre as preferências do usuário para aprimorar suas recomendações.
+
+O sistema coleta informações sobre as músicas que o usuário ouve, as músicas que ele pula, as músicas que ele adiciona às suas playlists, etc. Com base nesses dados, ele cria um perfil do usuário e suas preferências musicais.
 
 <center><img src="../imgs/agente-aprendizagem.png" alt="drawing" width="450"/></center>
 <center>Agente Baseado em Aprendizagem</center>
