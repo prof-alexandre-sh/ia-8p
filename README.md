@@ -1,1 +1,1 @@
-# ia-8p
+# Repositório da disciplina de Inteligência Artificial - 8º período de Sistemas de Informação
