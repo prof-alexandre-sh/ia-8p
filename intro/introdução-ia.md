@@ -103,7 +103,7 @@ Na definição de Norvig, podemos ver que o foco da IA foi, e ainda é, desenvol
 
 ---
 
-**A IA como um campo multidisciplinar**
+## **A IA como um campo multidisciplinar**
 
 A IA é um campo que foi desenvolvido por pesquisadores de diversas áreas diferentes. A sua natureza é multidisciplinar, isso porque diversas áreas conseguem contribuir para sua evolução.
 
@@ -116,17 +116,25 @@ A IA é um campo que foi desenvolvido por pesquisadores de diversas áreas difer
 
 ---
 
-**Agentes inteligentes em IA**
-
-- **MAIS UMA DEFINIÇÃO PARA IA**: É o estudo de agentes inteligentes que recebem percepções do ambiente e executam ações.
-- **Ideia dos agentes inteligentes**: sistemas que podem decidir o que fazer e quando fazer de forma autônoma.
-- **Se um agente é autônomo e executa suas tarefas com perfeição, seria ele racional?** No contexto deste tema, dizemos que um sistema é racional se "faz tudo certo", com os dados que tem.
-    - **Agente racional**: É aquele que age para alcançar o melhor resultado ou, quando há incerteza, o melhor resultado esperado.
+## **Agentes inteligentes em IA**
 
 **Agentes**
 
-- Um agente é tudo que pode ser considerado capaz de perceber seu ambiente por meio de **sensores e de agir sobre esse ambiente por intermédio atuadores**. 
-- Exemplos:
+Um agente é tudo que pode ser considerado capaz de perceber seu ambiente por meio de **sensores e de agir sobre esse ambiente por intermédio atuadores**. 
+
+<center><img src="../imgs/agente.png" alt="drawing" width="450"/></center>
+<center>Agentes em IA</center>
+
+&nbsp; 
+
+- **Mais uma definição para IA**: É o estudo de agentes inteligentes que recebem percepções do ambiente e executam ações.
+- **Ideia dos agentes inteligentes**: sistemas que podem decidir o que fazer e quando fazer de forma autônoma.
+- **Se um agente é autônomo e executa suas tarefas com perfeição, seria ele racional?** No contexto deste tema, dizemos que um sistema é racional se "faz tudo certo", com os dados que tem.
+- **Agente racional**: É aquele que age para alcançar o melhor resultado ou, quando há incerteza, o melhor resultado esperado.
+
+&nbsp; 
+
+Exemplos:
   - Agente humano:
     - Sensores: Olhos, ouvidos, nariz..
     - Atuadores: Mãos, pernas, bocas
@@ -192,7 +200,7 @@ Chamamos de **função do agente** o mapeamento de uma sequência de percepçõe
 
 - **Racionalidade**: Depende de quatro fatores: medida de desempenho, conhecimento prévio do ambiente, ações que o agente pode executar, sequência de percepções até o momento.
 
-- **Regra geral para medida de desempenh**: É melhor projetar as medidas de desempenho de acordo com o resultado esperado (desejado).
+- **Regra geral para medida de desempenho**: É melhor projetar as medidas de desempenho de acordo com o resultado esperado (desejado).
 
 ---
 
@@ -210,21 +218,21 @@ Chamamos de **função do agente** o mapeamento de uma sequência de percepçõe
 
 **Agentes baseados em modelos**: Esses agentes usam um **modelo interno do ambiente** que percebem para tomar suas decisões com base em previsões futuras. Vamos imaginar um agente que realiza controle de tráfego urbano. Esse agente vai utilizar dados históricos do tráfego, informações em tempo real a partir de seus sensores e outros dados para construir esse modelo interno. Com base nesse modelo, ele pode fazer previsões para tomar decisões. Para esse tipo de agente vamos ter uma etapa extra de modelagem do ambiente usando os dados que temos disponíveis.
 
-<center><img src="../imgs/agente-modelos.png" alt="drawing" width="450"/></center>
+<center><img src="../imgs/modelo.png" alt="drawing" width="450"/></center>
 <center>Agente Baseado em Modelos</center>
 
 ---
 
 **Agentes baseados em objetivos**: São os agentes que tomam decisões que os aproximam de alcançar alguma meta definida. Podemos usar o mesmo exemplo do aspirador para imaginar um agente baseado em objetivo. Nesse cenário, o objetivo do agente é limpar o máximo de espaços possíveis. Para esse tipo de agente, vamos ter dois processos importantes: 1) Verificação do objetivo, onde o aspirador verifica através de sensores se a sujeira foi removida; 2) Iteração, onde o aspirador repete o processo de limpeza até que o objetivo seja concluído.
 
-<center><img src="../imgs/agente-objetivo.png" alt="drawing" width="450"/></center>
+<center><img src="../imgs/objetivos.png" alt="drawing" width="450"/></center>
 <center>Agente Baseado em Objetivos</center>
 
 ---
 
 **Agentes baseados em utilidade**: É o tipo de agente que toma decisções baseado no resultados de uma função chamada de "utilidade". Essa função atribui valores numéricos a diferentes resultados de possíveis ações. O agente precisa escolher as ações que vão **maximizar** o valor dessa função. Podemos usar como exemplo os **sistemas de recomendação**. Um sistema de recomendação de filmes pode ser um agente  que tem como propósito maximizar a satisfação do usuário quando sugere filmes. Essa função pode ser modelada baseada nas preferências do usuário e em informações sobre os filmes, como, gênero, duração, elenco e outros. A função pode, por exemplo, atribuir uma nota de 0 a 10 para cada filme, representando o quanto um usuário específico pode gostar de um filme. Quando o usuário interage com a plataforma, ele fornece informações sobre as suas preferências. Usando os dados dos usuários e dos filmes, a função de utilidade pode ser criada para atribuir uma pontuação que indica a possibilidade do usuário gostar do filme visando maximizar sua satisfação. Portanto, temos dois elementos importantes nessa função: **Modelagem da função** e **Objetivo (Satisfação do cliente)**. 
 
-<center><img src="../imgs/agente-utilidade.png" alt="drawing" width="450"/></center>
+<center><img src="../imgs/utilidade.png" alt="drawing" width="450"/></center>
 <center>Agente Baseado em Utilidade</center>
 
 ---
@@ -233,5 +241,5 @@ Chamamos de **função do agente** o mapeamento de uma sequência de percepçõe
 
 O sistema coleta informações sobre as músicas que o usuário ouve, as músicas que ele pula, as músicas que ele adiciona às suas playlists, etc. Com base nesses dados, ele cria um perfil do usuário e suas preferências musicais.
 
-<center><img src="../imgs/agente-aprendizagem.png" alt="drawing" width="450"/></center>
+<center><img src="../imgs/aprendizagem.png" alt="drawing" width="450"/></center>
 <center>Agente Baseado em Aprendizagem</center>
