@@ -191,11 +191,11 @@ class AlgoritmoGenetico():
 
 if __name__ == '__main__':
     #random.seed(2)
-    target = "alexandre henrick"
+    target = "nome sobrenome terceiro nome"
     chars = "abcdefghijklmnopqrstyvxzyw "
     taxa_mutacao = 0.01
     numero_geracoes = 100
-    tamanho_populacao = 100
+    tamanho_populacao = 150
     ag = AlgoritmoGenetico(tamanho_populacao)
     
     ag.resolver(taxa_mutacao, numero_geracoes)
