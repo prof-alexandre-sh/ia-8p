@@ -6,7 +6,6 @@
 """
 
 import random
-#import matplotlib.pyplot as pt
         
 class Individuo():
     def __init__(self, geracao=0):
@@ -148,7 +147,7 @@ class AlgoritmoGenetico():
             soma_avaliacao = self.somaAvaliacoes()
             nova_pop = []
             
-            for individuos_gerados in range(0, self.tamanho_populacao, 2):
+            for individuos_gerados in range(0, self.tamanho_populacao, 2): # De dois em dois pois vamos gerar 2 filhos e no fim das iterações teremos um número de filhos igual ao total da população
                 pai1 = self.selecionaPai(soma_avaliacao)
                 pai2 = self.selecionaPai(soma_avaliacao)
                 
